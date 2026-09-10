@@ -1,97 +1,126 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+💰 Expense Tracker
 
-# Getting Started
+Expense Tracker is a React Native UI application designed to provide a clean and practical interface for managing personal bills and expenses. The app focuses on creating an intuitive expense-management experience with dedicated screens for adding, viewing, updating, and deleting expense records.
 
-> **Note**: Make sure you have completed the [Set Up Your Environment](https://reactnative.dev/docs/set-up-your-environment) guide before proceeding.
+The application also provides a Recent Expenses section that highlights transactions from the last 7 days, allowing users to quickly review their latest spending activity. It includes UI flows for bill splitting, supporting both equal and percentage-based sharing among group members.
 
-## Step 1: Start Metro
+✨ Key Features
 
-First, you will need to run **Metro**, the JavaScript build tool for React Native.
+* 💰 Add new expenses
+* 👁️ View expense details
+* ✏️ Update existing expenses
+* 🗑️ Delete expenses
+* 📅 Display recent expenses from the last 7 days
+* 🧾 Manage bill details through dedicated UI screens
+* 👥 Add and manage group members
+* ➗ Equal bill-splitting UI
+* 📊 Percentage-based bill-splitting UI
+* 📱 Clean and responsive mobile interface
+* 🧭 Simple navigation between expense-management screens
 
-To start the Metro dev server, run the following command from the root of your React Native project:
+🛠️ Tech Stack
 
-```sh
-# Using npm
+React Native • Expo • JavaScript • React Hooks • Responsive UI • Form Management • Mobile Navigation  
+
+Project WorkFlow / Architecture
+
+Expense Tracker UI → Add Expense → View Expense → Update Expense → Delete Expense → Recent Expenses (Last 7 Days) → Bill Splitting (Equal Split • Percentage Split)
+
+▶️ Run the App
+
+📱 React Native App
+
+1. Clone the repository
+
+git clone <repository-url>
+cd expense-tracker
+
+2. Install dependencies
+
+npm install
+
+3. Start Metro
+
 npm start
 
-# OR using Yarn
-yarn start
-```
+4. Run on Android
 
-## Step 2: Build and run your app
+npx react-native run-android
 
-With Metro running, open a new terminal window/pane from the root of your React Native project, and use one of the following commands to build and run your Android or iOS app:
+Or:
 
-### Android
-
-```sh
-# Using npm
 npm run android
 
-# OR using Yarn
-yarn android
-```
+5. Run on iOS
 
-### iOS
+cd ios
+pod install
+cd ..
+npx react-native run-ios
 
-For iOS, remember to install CocoaPods dependencies (this only needs to be run on first clone or after updating native deps).
+Or:
 
-The first time you create a new project, run the Ruby bundler to install CocoaPods itself:
-
-```sh
-bundle install
-```
-
-Then, and every time you update your native dependencies, run:
-
-```sh
-bundle exec pod install
-```
-
-For more information, please visit [CocoaPods Getting Started guide](https://guides.cocoapods.org/using/getting-started.html).
-
-```sh
-# Using npm
 npm run ios
 
-# OR using Yarn
-yarn ios
-```
+⸻
 
-If everything is set up correctly, you should see your new app running in the Android Emulator, iOS Simulator, or your connected device.
+🖥️ Backend
 
-This is one way to run your app — you can also build it directly from Android Studio or Xcode.
+1. Navigate to the backend folder
 
-## Step 3: Modify your app
+cd backend
 
-Now that you have successfully run the app, let's make changes!
+2. Install backend dependencies
 
-Open `App.tsx` in your text editor of choice and make some changes. When you save, your app will automatically update and reflect these changes — this is powered by [Fast Refresh](https://reactnative.dev/docs/fast-refresh).
+npm install
 
-When you want to forcefully reload, for example to reset the state of your app, you can perform a full reload:
+3. Start the backend server
 
-- **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Dev Menu**, accessed via <kbd>Ctrl</kbd> + <kbd>M</kbd> (Windows/Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (macOS).
-- **iOS**: Press <kbd>R</kbd> in iOS Simulator.
+For development with Nodemon:
 
-## Congratulations! :tada:
+npm run dev
 
-You've successfully run and modified your React Native App. :partying_face:
+Or with Node.js:
 
-### Now what?
+npm start
 
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [docs](https://reactnative.dev/docs/getting-started).
+4. Backend API
 
-# Troubleshooting
+The backend runs on the port configured in your .env file.
 
-If you're having issues getting the above steps to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
+Example:
 
-# Learn More
+PORT=8000
 
-To learn more about React Native, take a look at the following resources:
+Note: This project uses React Native CLI (Non-Expo) for the mobile application and a Node.js + Express.js backend.
 
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+🎯 Project Goals
+
+* Build a practical expense-management UI using React Native.
+* Practice designing reusable mobile UI components.
+* Implement add, view, update, and delete expense flows at the UI level.
+* Create a clear interface for reviewing recent expenses.
+* Display recent transactions from the previous 7 days.
+* Design intuitive bill-splitting screens for equal and percentage-based sharing.
+* Practice mobile navigation, forms, lists, cards, and interactive UI elements.
+* Create a polished portfolio project demonstrating React Native UI development.
+
+💼 Portfolio Highlights
+
+This project demonstrates practical experience with:
+
+* React Native UI: Building a functional cross-platform mobile interface.
+* Expense Management: Designing screens for adding, viewing, editing, and deleting expenses.
+* Recent Expenses: Creating a date-based UI to display expenses from the last 7 days.
+* Forms: Designing user-friendly forms for entering expense and bill information.
+* Bill Splitting: Creating UI flows for equal and percentage-based expense sharing.
+* Group Management UI: Designing interfaces for selecting and managing group members.
+* Navigation: Connecting multiple screens into a consistent application flow.
+* Responsive Design: Creating layouts that adapt to different mobile screen sizes.
+* Portfolio Development: Demonstrating practical React Native UI and application-design skills.
+
+📄 Project Purpose
+
+This project focuses on building the frontend UI and user experience of a practical expense-management application using React Native. It demonstrates how to design and organize expense CRUD screens, recent expense tracking, bill-splitting flows, group interfaces, forms, lists, and reusable components into a cohesive mobile application.
+
+Note: This version focuses on the UI and frontend experience rather than backend/database integration.
